@@ -297,7 +297,8 @@ namespace ESP8266_IoT_naim {
         //After input all the data, search the target's key index
         let target_index = array_keys.indexOf(target)
         //Return the value of that key
-        return array_values[target_index]
+        //return array_values[target_index]
+        return source['feeds'][0]['field1'];
 
     }
 
