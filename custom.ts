@@ -298,7 +298,7 @@ namespace ESP8266_IoT_naim {
         let target_index = array_keys.indexOf(target)
         //Return the value of that key
         //return array_values[target_index]
-        return source['feeds'][0]['field1'];
+        return json_object['feeds'][0]['field1'];
 
     }
 
