@@ -1,4 +1,4 @@
-namespace WiFiIoT {
+namespace ESP82668_IoT_naim {
     let flag = true;
     //let httpReturnArray: string[] = []
     let httpReturnString: string = ""
