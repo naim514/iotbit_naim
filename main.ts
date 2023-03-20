@@ -6,7 +6,7 @@ input.onButtonPressed(Button.A, function () {
     )
 })
 ESP82668_IoT_naim.on_HTTP_recevid(function (HTTP_Status_Code, Data) {
-    basic.showString(HTTP_Status_Code)
+    basic.showString(ESP82668_IoT_naim.get_value("fields", ESP82668_IoT_naim.get_value("feeds", "https://api.thingspeak.com/channels/1028055/feeds.json?api_key=1IFCE89OOGQ27NXI&results=1")))
 })
 basic.showIcon(IconNames.Heart)
 ESP8266_IoT.initWIFI(SerialPin.P8, SerialPin.P12, BaudRate.BaudRate115200)
