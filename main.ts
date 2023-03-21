@@ -18,3 +18,4 @@ if (IoT_Bit_naim.wifiState(true)) {
         basic.showIcon(IconNames.Happy)
     }
 }
+
