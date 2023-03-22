@@ -310,7 +310,8 @@ status code and the return body.
         //After input all the data, search the target's key index
         let target_index = array_keys.indexOf(target)
         //Return the value of that key
-        return array_values[target_index]
+        //return array_values[target_index]
+        return json_object["feeds"][0]["field1"]
 
     }
 
