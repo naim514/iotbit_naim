@@ -188,11 +188,11 @@ namespace IoT_Bit_naim {
     /**
      * Connect to ThingSpeak and set data.
      */
-    //% block="set data to send ThingSpeak | Write API key = %write_api_key|Field 1 = %n1||Field 2 = %n2|Field 3 = %n3|Field 4 = %n4|Field 5 = %n5|Field 6 = %n6|Field 7 = %n7|Field 8 = %n8"
+    //% block="set data to send ThingSpeak  | Write API key = %write_api_key|Field 1 = %n1||Field 2 = %n2|Field 3 = %n3|Field 4 = %n4|Field 5 = %n5|Field 6 = %n6|Field 7 = %n7|Field 8 = %n8"
     //% write_api_key.defl=your_write_api_key
     //% expandableArgumentMode="enabled"
     //% subcategory="ThingSpeak" weight=85
-    export function setData(write_api_key: string, n1: number = 50, n2: number = 0, n3: number = 0, n4: number = 0, n5: number = 0, n6: number = 0, n7: number = 0, n8: number = 0) {
+    export function setData(write_api_key: string, n1: number = 0, n2: number = 0, n3: number = 0, n4: number = 0, n5: number = 0, n6: number = 0, n7: number = 0, n8: number = 0) {
         TStoSendStr = "GET /update?api_key="
             + write_api_key
             + "&field1="
